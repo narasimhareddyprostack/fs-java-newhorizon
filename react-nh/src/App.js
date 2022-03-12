@@ -1,9 +1,11 @@
 import Navbar from './Navbar/Navbar'
+import Product from './Product/Product'
+import Message from './Message/Message'
 let App = () => {
-
     return <div>
         <Navbar />
-        <h1>Welcome to React JS</h1>
+        <Message />
+        {/* <Product /> */}
     </div>
 }
 export default App
