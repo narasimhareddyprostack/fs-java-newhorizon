@@ -4,7 +4,7 @@ let employees = [{ id: 101, name: "Rahul Gandhi", salary: 45000 },
 let createEmployee = (emp) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            let flag = false
+            let flag = true
             employees.push(emp);
             flag ? resolve("Data Inserted") : reject("Not Inserted")
         }, 3000)
