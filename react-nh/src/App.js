@@ -1,19 +1,22 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import CompA from './PropsEx/CompA'
-import Message from './Message/Message'
-import Counter from './PropsEx2/Counter'
-import Product from './Product/Product'
-import Login from './FormHandling/Login'
-import Registration from './FormHandling/Registration'
 import Employee from './EmployeeList/Employee'
-import Salary from './Salary/Salary'
+import Login from './FormHandling/Login'
+import Product from './Product/Product'
+import Message from './Message/Message'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 class App extends React.Component {
     render() {
         return <>
-            <Navbar />
-            <Employee />
-
+            <Router>
+                <Navbar />
+                <Switch>
+                    <Route path="/employee" component={Employee} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/product" component={Product} />
+                    <Route path="/message" component={Message} />
+                </Switch>
+            </Router>
 
         </>
     }
