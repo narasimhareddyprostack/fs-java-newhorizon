@@ -2,7 +2,6 @@ import React from 'react'
 class Message extends React.Component {
     message = "Good Morning"
     emp = { id: 101, name: "Rahul Gandhi", salary: 45000 }
-
     render() {
         return <>
             <h1>{this.message}</h1>
