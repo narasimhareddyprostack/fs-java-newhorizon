@@ -4,18 +4,20 @@ import Employee from './EmployeeList/Employee'
 import Login from './FormHandling/Login'
 import Product from './Product/Product'
 import Message from './Message/Message'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import User from './User/User'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 class App extends React.Component {
     render() {
         return <>
             <Router>
                 <Navbar />
-                <Switch>
-                    <Route path="/employee" component={Employee} />
-                    <Route path="/login" component={Login} />
-                    <Route path="/product" component={Product} />
-                    <Route path="/message" component={Message} />
-                </Switch>
+                <Routes>
+                    <Route path="/user" element={<User />} />
+                    <Route path="/employee" element={<Employee />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/product" element={<Product />} />
+                    <Route path="/message" element={<Message />} />
+                </Routes>
             </Router>
 
         </>
