@@ -1,16 +1,20 @@
 import React, { Component } from 'react'
 
 export class ContactList extends Component {
+    selectedContact = (contact) => {
+        console.log(contact)
+        this.props.selectContact(contact);
+    }
     render() {
         return (
             <div>
-                <h1>Contact List</h1>
-                <pre>{JSON.stringify(this.props.contactsData)}</pre>
+                {/*  <h1>Contact List</h1>
+                <pre>{JSON.stringify(this.props.contactsData)}</pre> */}
                 <div className="container">
                     <div className="row">
                         <div className="col">
                             <table className='table table-hover'>
-                                <thead>
+                                <thead className="bg-primary text-white">
                                     <tr>
                                         <th>Id</th>
                                         <th>Name</th>
@@ -21,7 +25,7 @@ export class ContactList extends Component {
                                 <tbody>
                                     {
                                         this.props.contactsData.map((contact) => {
-                                            return <tr>
+                                            return <tr key={contact.login.uuid} onMouseOver={this.selectedContact.bind(this, contact)}>
                                                 <td>{contact.login.uuid.substring(32, 36)}</td>
                                                 <td>{contact.name.first}</td>
                                                 <td>{contact.email}</td>

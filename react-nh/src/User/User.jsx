@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Axios from 'axios';
-
-
 class User extends Component {
     constructor(props) {
         super(props);
