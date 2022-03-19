@@ -8,6 +8,7 @@ class Navbar extends Component {
                 <div className="ml-auto">
                     <ul className="navbar-nav">
 
+                        <li className="nav-item"><Link to="/contacts" className="nav-link">Contact App</Link></li>
                         <li className="nav-item"><Link to="/cycle" className="nav-link">Comp Life Cycle</Link></li>
                         <li className="nav-item"><Link to="/images" className="nav-link">Images</Link></li>
                         <li className="nav-item"><Link to="/user" className="nav-link">User</Link></li>
