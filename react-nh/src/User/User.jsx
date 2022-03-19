@@ -37,7 +37,7 @@ class User extends Component {
                                 <tbody>
                                     {
                                         this.state.user.map((singleUser) => {
-                                            return <tr>
+                                            return <tr key={singleUser.id}>
                                                 <td>{singleUser.id}</td>
                                                 <td>{singleUser.name}</td>
                                                 <td>{singleUser.email}</td>

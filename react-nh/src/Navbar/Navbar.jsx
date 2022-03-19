@@ -7,6 +7,9 @@ class Navbar extends Component {
                 <Link to="/" className="navbar-brand">React List Rendering Example</Link>
                 <div className="ml-auto">
                     <ul className="navbar-nav">
+
+                        <li className="nav-item"><Link to="/cycle" className="nav-link">Comp Life Cycle</Link></li>
+                        <li className="nav-item"><Link to="/images" className="nav-link">Images</Link></li>
                         <li className="nav-item"><Link to="/user" className="nav-link">User</Link></li>
                         <li className="nav-item"><Link to="/employee" className="nav-link">Employee</Link></li>
                         <li className="nav-item"><Link to="/login" className="nav-link">Login</Link></li>
