@@ -1,0 +1,17 @@
+Required Package:
+-------------------
+1.redux 
+2.react-redux 
+3.redux-devtool-extension 
+
+Crome - redux Dev Tool extension 
+
+=================================
+
+Step 1 : React Component - dispatch an redux action 
+Step 2 : Redux Action to redux reducer 
+Step 3 : Reducer is going to update store, based action type 
+
+Step 4: once store is updated, It reflect back to view 
+
+How to displatch an action?
