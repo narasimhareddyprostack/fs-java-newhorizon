@@ -22,6 +22,7 @@ public class ProductRestController {
 
 	@Autowired
 	IProductService service;
+	
 	//localhost:8888/api/product/update
 		@PutMapping(value="/proudct/update" ,consumes="application/json")
 		public String updateProduct(@RequestBody ProductDTO productDTO) {
